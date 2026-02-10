@@ -14,16 +14,6 @@ This dashboard provides comprehensive insights into how daily habits like sleep,
 - **Prediction Model**: ML-powered stress level prediction
 - **Conclusion**: Key findings and recommendations
 
-## 📁 Project Structure
-
-```
-mental-health-dashboard/
-│
-├── app.py                                      # Main Streamlit application
-├── requirements.txt                            # Python dependencies
-├── synthetic_mental_health_dataset__1_.csv    # Dataset file
-└── README.md                                  # This file
-```
 
 ## 🛠️ Setup Instructions
 
@@ -85,45 +75,6 @@ The dataset includes the following features:
 - **mood_score**: Mood rating (0-10)
 - **stress_level**: Stress intensity (0-10)
 
-## 🎨 Customizing Images
-
-The dashboard uses online images from icons8.com. To use your own images:
-
-1. **Option 1 - Use online images:**
-   - Find images on websites like icons8.com, flaticon.com, or similar
-   - Copy the image URL
-   - Replace the URLs in `app.py`:
-     ```python
-     st.sidebar.image("YOUR_IMAGE_URL_HERE", width=100)
-     ```
-
-2. **Option 2 - Use local images:**
-   - Create an `assets` or `images` folder in your project
-   - Add your images to this folder
-   - Update the code:
-     ```python
-     st.sidebar.image("assets/brain_icon.png", width=100)
-     st.image("assets/mental_health.png", width=200)
-     ```
-
-3. **Current image URLs in the code:**
-   - Sidebar brain icon: `https://img.icons8.com/fluency/96/000000/brain.png`
-   - Home page image: `https://img.icons8.com/bubbles/200/000000/mental-health.png`
-
-## 🔧 Troubleshooting
-
-**Error: Module not found**
-- Solution: Make sure you installed all requirements: `pip install -r requirements.txt`
-
-**Error: File not found (CSV)**
-- Solution: Ensure the CSV file is in the same folder as `app.py`
-
-**Port already in use**
-- Solution: Run with different port: `streamlit run app.py --server.port 8502`
-
-**Slow performance**
-- Solution: The model training might take a few seconds. This is normal.
-
 ## 📱 Features Breakdown
 
 ### Interactive Elements
@@ -176,8 +127,3 @@ If you encounter any issues:
 
 This project is for educational purposes.
 
----
-
-**Created by:** Data Science Student  
-**Technologies Used:** Python, Streamlit, Pandas, Scikit-learn, Plotly  
-**Last Updated:** 2026
