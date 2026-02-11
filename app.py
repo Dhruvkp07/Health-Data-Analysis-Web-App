@@ -829,7 +829,6 @@ def conclusion_page(df):
     
     st.markdown("---")
     
-    # Recommendations
     st.subheader("💡 Evidence-Based Recommendations")
     
     st.success("""
@@ -868,7 +867,6 @@ def conclusion_page(df):
     
     st.markdown("---")
     
-    # Model Performance Summary
     if 'accuracy' in st.session_state:
         st.subheader("🤖 Machine Learning Model Summary")
         
@@ -884,7 +882,6 @@ def conclusion_page(df):
     
     st.markdown("---")
     
-    # Final Message
     st.subheader("🌟 Final Thoughts")
     
     st.markdown("""
@@ -914,7 +911,6 @@ def conclusion_page(df):
 
 # Main App Logic
 def main():
-    # Load data
     try:
         df = load_data()
     except FileNotFoundError:
@@ -924,7 +920,6 @@ def main():
     # Navigation
     page = sidebar_navigation()
     
-    # Route to appropriate page
     if page == "🏠 Home":
         home_page()
     elif page == "📊 Dataset Overview":
