@@ -123,7 +123,3 @@ If you encounter any issues:
 3. Ensure all dependencies are installed
 4. Check the terminal for error messages
 
-## 📄 License
-
-This project is for educational purposes.
-
