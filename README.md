@@ -1,7 +1,5 @@
 # 🧠 Mental Health Analytics Dashboard
 
-An interactive Streamlit dashboard for analyzing lifestyle factors and their impact on mental health using machine learning.
-
 ## 📋 Project Overview
 
 This dashboard provides comprehensive insights into how daily habits like sleep, exercise, screen time, and diet affect mental wellbeing. It includes exploratory data analysis, interactive visualizations, and a machine learning model to predict stress levels.
